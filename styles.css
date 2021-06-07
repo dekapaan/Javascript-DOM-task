@@ -1,14 +1,107 @@
-/* body {
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap");
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   min-height: 100vh;
+  font-family: "Baloo Tammudu 2", sans-serif;
+  background: linear-gradient(110deg, #054023 34%, rgba(0, 0, 0, 0) 34%),
+    linear-gradient(110deg, #0a0f0d 66%, #000614 66%);
 }
 .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
-  background: crimson;
+  background: #0a0f0d00;
   color: whitesmoke;
-} */
+}
+
+#filter {
+  width: 300px;
+  height: 33px;
+  padding-left: 10px;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0);
+  color: #eee;
+  border: 1px solid crimson;
+  outline: none;
+}
+
+::placeholder {
+  color: crimson;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+#item {
+  width: 300px;
+  height: 33px;
+  margin-right: 20px;
+  padding-left: 10px;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0);
+  color: #eee;
+  border: 1px solid crimson;
+  outline: none;
+}
+#submit {
+  height: 38px;
+  color: crimson;
+  background: #0a0f0d;
+  border: 1px solid crimson;
+  border-radius: 1px;
+  font-size: 15px;
+  margin-top: 2px;
+  padding: 0 10px;
+  transition: 0.2s ease-in;
+}
+
+#submit:hover {
+  background: crimson;
+  color: #0a0f0d;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  width: 60vw;
+}
+
+.list-group-item {
+  list-style: none;
+  width: 60vw;
+  height: 70px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 4px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+.delete {
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  font-size: 18px;
+  color: crimson;
+  transition: 0.2s linear;
+}
+
+.delete:hover {
+  transform: rotate(180deg);
+}
